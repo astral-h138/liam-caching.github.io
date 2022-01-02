@@ -134,6 +134,10 @@ h1 {
     display: none;
 }
 
+#to-from {
+    font-style: italic;
+}
+
 .hint {
     display: none;
 }

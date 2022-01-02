@@ -30,6 +30,8 @@
                 <div class="sidebar-content">
                     <h1 id="cache-name">Happy Birthday!</h1> 
 
+                    <p id="to-from"></p>
+
                     <p id="cache-size"></p>
                     <p id="cache-terr"></p>
                     <p id="cache-diff"></p>
@@ -56,7 +58,8 @@
                     "cache-terr": "3",
                     "cache-diff": "3",
                     "cache-desc": "An unfenced property boundary is a fascinating place.",
-                    "hint": "Title. And look up."
+                    "hint": "Title. And look up.",
+                    "to-from": "Doug, Sara, Kiah, and Lyle"
                 },
 
             "in-the-sea": {
@@ -65,7 +68,8 @@
                     "cache-terr": "5",
                     "cache-diff": "2",
                     "cache-desc": "Wear shoes for the slippery rocks. The cache is not underwater.",
-                    "hint": "Hidden in a shallow hole with cover."
+                    "hint": "Hidden in a shallow hole with cover.",
+                    "to-from": "Astral and SJ"
                 },
             "beach-tree": {
                     "cache-name": "Drifting Away",
@@ -73,7 +77,8 @@
                     "cache-terr": "2",
                     "cache-diff": "3",
                     "cache-desc": "Many things wash ashore after a storm.",
-                    "hint": "Look for a driftwood disguise."
+                    "hint": "Look for a driftwood disguise.",
+                    "to-from": "Sheila, Steve, Grace, and Dashiell"
                 },
             "buried-treasure": {
                     "cache-name": "Pirate Adventure",
@@ -81,7 +86,8 @@
                     "cache-terr": "1",
                     "cache-diff": "4",
                     "cache-desc": "Think like a pirate. You will need to put in a bit of work for this one.",
-                    "hint": "Buried treasure."
+                    "hint": "Buried treasure.",
+                    "to-from": "Kiera and Jonathan"
                 },
             "deck": {
                     "cache-name": "Underfoot",
@@ -89,7 +95,8 @@
                     "cache-terr": "1",
                     "cache-diff": "3",
                     "cache-desc": "Where would you hide in a game of hide-and-seek?",
-                    "hint": "You may have walked right over it."
+                    "hint": "You may have walked right over it.",
+                    "to-from": "Kiera and Jonathan"
                 },
             "column": {
                     "cache-name": "Architecture",
@@ -97,7 +104,8 @@
                     "cache-terr": "1",
                     "cache-diff": "2",
                     "cache-desc": "Design choices can be so fascinating. The cache is not near utility equipment.",
-                    "hint": "Look for an unexpected angle."
+                    "hint": "Look for an unexpected angle.",
+                    "to-from": "Dashiell"
                 },
 
             "coconut": {
@@ -106,7 +114,8 @@
                     "cache-terr": "2",
                     "cache-diff": "2",
                     "cache-desc": "The front yard is a lush tropical landscape. Shoes recommended.",
-                    "hint": "Look for the odd one out."
+                    "hint": "Look for the odd one out.",
+                    "to-from": "Astral and SJ"
                 }
         };
 
@@ -130,6 +139,7 @@
             $( "#show-hint" ).css("display", "inline");
             $( ".hint" ).css("display", "none");
             $( "#cache-name" ).text(json_info[this.id]["cache-name"]);
+            $( "#to-from" ).text("From " + json_info[this.id]["to-from"]);
             $( "#cache-diff" ).text("Difficulty: " + json_info[this.id]["cache-diff"]);
             $( "#cache-terr" ).text("Terrain: " + json_info[this.id]["cache-terr"]);
             $( "#cache-size" ).text("Size: " + json_info[this.id]["cache-size"]);
