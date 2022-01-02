@@ -130,6 +130,14 @@ h1 {
     font-style: italic;
 }
 
+#show-hint {
+    display: none;
+}
+
+.hint {
+    display: none;
+}
+
 #hint {
     font-weight: bold;
 }
